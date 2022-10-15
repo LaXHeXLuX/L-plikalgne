@@ -924,7 +924,7 @@
 				<rect id="Rectangle_9" rx="51.5" ry="51.5" x="0" y="0" width="372" height="103">
 				</rect>
 			</svg>
-			<div id="Thjenda_ostukorv">
+			<div onclick="onRemoveItemFromCart()" id="Thjenda_ostukorv">
 				<span>Tühjenda ostukorv</span>
 			</div>
 		</div>
@@ -932,9 +932,6 @@
 			<rect id="Rectangle_10" rx="0" ry="0" x="0" y="0" width="1460" height="411">
 			</rect>
 		</svg>
-		<div id="AMD_RyzenTM_5600X">
-			<span>AMD Ryzen</span><span style="vertical-align:super;">TM</span><span> 5600X</span>
-		</div>
 		<svg class="Rectangle_11">
 			<rect id="Rectangle_11" rx="0" ry="0" x="0" y="0" width="1460" height="102">
 			</rect>
@@ -948,12 +945,18 @@
 		<div id="Hind">
 			<span>Hind:</span>
 		</div>
-		<div id="n_">
-			<span>1</span>
+		<div id="meieToode", style="display: none;">
+			<div id="AMD_RyzenTM_5600X">
+				<span>AMD Ryzen</span><span style="vertical-align:super;">TM</span><span> 5600X</span>
+			</div>
+			<div id="n_">
+				<span>1</span>
+			</div>
+			<div id="n_00">
+				<span>300€</span>
+			</div>
 		</div>
-		<div id="n_00">
-			<span>300€</span>
-		</div>
+
 		<a href="Maksma.html" id="Maksma">
 			<svg class="Rectangle_9_">
 				<rect id="Rectangle_9_" rx="51.5" ry="51.5" x="0" y="0" width="252" height="103">
@@ -1109,4 +1112,5 @@
 	</div>
 </div>
 </body>
+<script src="ostukorv.js"></script>
 </html>

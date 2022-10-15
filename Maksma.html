@@ -6,6 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maksma</title>
 <style id="applicationStylesheet" type="text/css">
+	.inputField{
+		height: 30px;
+	}
 	.mediaViewInfo {
 		--web-view-name: Maksma;
 		--web-view-id: Maksma;
@@ -594,50 +597,55 @@
 				<path id="Maksan_r" d="M 44 0 L 200 0 C 224.300537109375 0 244 19.69947052001953 244 44 C 244 68.30052947998047 224.300537109375 88 200 88 L 44 88 C 19.69947052001953 88 0 68.30052947998047 0 44 C 0 19.69947052001953 19.69947052001953 0 44 0 Z">
 				</path>
 			</svg>
-			<div id="Maksan_s">
+			<div onclick="checkInputs()" id="Maksan_s">
 				<span>Maksan</span>
 			</div>
 		</div>
-		<div id="Eesnimi">
-			<div id="Eesnimi_u">
-				<span>Eesnimi:</span>
+		<form>
+			<div id="Eesnimi">
+				<div id="Eesnimi_u">
+					<span>Eesnimi:</span>
+				</div>
+				<div id="Input1">
+					<input class="inputField" type="text">
+				</div>
 			</div>
-			<div id="Input1">
-				<span>Input1</span>
+			<div id="Perenimi">
+				<div id="Perenimi_x">
+					<span>Perenimi:</span>
+				</div>
+				<div id="Input2">
+					<input class="inputField" type="text">
+				</div>
 			</div>
-		</div>
-		<div id="Perenimi">
-			<div id="Perenimi_x">
-				<span>Perenimi:</span>
+			<div id="Meil">
+				<div id="Meiliaadress">
+					<span>Meiliaadress:</span>
+				</div>
+				<div id="Input3">
+					<input class="inputField" type="text">
+				</div>
 			</div>
-			<div id="Input2">
-				<span>Input2</span>
+			<div id="Aadress">
+				<div id="Aadress_">
+					<span>Aadress:</span>
+				</div>
+				<div id="Input4">
+					<input class="inputField" type="text">
+				</div>
 			</div>
-		</div>
-		<div id="Meil">
-			<div id="Meiliaadress">
-				<span>Meiliaadress:</span>
+			<div id="Pank">
+				<div id="Pank_">
+					<span>Pank:</span>
+				</div>
+				<div id="Radiobutton">
+					<input class="Radiobtn" type="radio" id="bank1" name="bank">
+					<label> Swedbank</label>
+					<input class="Radiobtn" type="radio" id="bank2" name="bank">
+					<label> LHV</label>
+				</div>
 			</div>
-			<div id="Input3">
-				<span>Input3</span>
-			</div>
-		</div>
-		<div id="Aadress">
-			<div id="Aadress_">
-				<span>Aadress:</span>
-			</div>
-			<div id="Input4">
-				<span>Input4</span>
-			</div>
-		</div>
-		<div id="Pank">
-			<div id="Pank_">
-				<span>Pank:</span>
-			</div>
-			<div id="Radiobutton">
-				<span>Radiobutton</span>
-			</div>
-		</div>
+		</form>
 	</div>
 	<div id="Footer">
 		<svg class="Footer_bg">
@@ -701,4 +709,5 @@
 	</div>
 </div>
 </body>
+<script src="maksma.js"></script>
 </html>
