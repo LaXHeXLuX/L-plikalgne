@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toode</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Toode;
+		--web-view-id: Toode;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Toode;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Toode {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Toode;
+		--web-view-id: Toode;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Main {
+		position: absolute;
+		width: 1542px;
+		height: 2017px;
+		left: 378px;
+		top: 83px;
+		overflow: visible;
+	}
+	#Main_bg {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Main_bg {
+		position: absolute;
+		overflow: visible;
+		width: 1542px;
+		height: 2017px;
+		left: 0px;
+		top: 0px;
+	}
+	#Toode1 {
+		position: absolute;
+		width: 1455px;
+		height: 706px;
+		left: 40px;
+		top: 32px;
+		overflow: visible;
+	}
+	#Toote_bg {
+		opacity: 0.15;
+		fill: rgba(73,193,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Toote_bg {
+		position: absolute;
+		overflow: visible;
+		width: 1455px;
+		height: 706px;
+		left: 0px;
+		top: 0px;
+	}
+	#Hind {
+		position: absolute;
+		width: 243px;
+		height: 71px;
+		left: 15px;
+		top: 579px;
+		overflow: visible;
+	}
+	#Hind_bg {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Hind_bg {
+		position: absolute;
+		overflow: visible;
+		width: 243px;
+		height: 71px;
+		left: 0px;
+		top: 0px;
+	}
+	#xx {
+		left: 85px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Rockwell;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(41,42,80,1);
+	}
+	#Stars {
+		position: absolute;
+		width: 430px;
+		height: 86px;
+		left: 15px;
+		top: 471px;
+		overflow: visible;
+	}
+	#Stars_bg {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Stars_bg {
+		position: absolute;
+		overflow: visible;
+		width: 430px;
+		height: 86px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_awesome-star {
+		fill: rgba(211,190,81,1);
+	}
+	.Icon_awesome-star {
+		overflow: visible;
+		position: absolute;
+		width: 69.333px;
+		height: 63.997px;
+		left: 19.321px;
+		top: 10.473px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_awesome-star_w {
+		fill: rgba(211,190,81,1);
+	}
+	.Icon_awesome-star_w {
+		overflow: visible;
+		position: absolute;
+		width: 69.333px;
+		height: 63.997px;
+		left: 101.155px;
+		top: 10.473px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_awesome-star_x {
+		fill: rgba(211,190,81,1);
+	}
+	.Icon_awesome-star_x {
+		overflow: visible;
+		position: absolute;
+		width: 69.333px;
+		height: 63.997px;
+		left: 182.988px;
+		top: 10.473px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_awesome-star_y {
+		fill: rgba(211,190,81,1);
+	}
+	.Icon_awesome-star_y {
+		overflow: visible;
+		position: absolute;
+		width: 69.333px;
+		height: 63.997px;
+		left: 264.822px;
+		top: 10.473px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_awesome-star_z {
+		fill: rgba(126,126,126,1);
+	}
+	.Icon_awesome-star_z {
+		overflow: visible;
+		position: absolute;
+		width: 69.333px;
+		height: 63.997px;
+		left: 346.656px;
+		top: 10.473px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#AMD_Ryzen_5_5600X {
+		left: 485px;
+		top: 19px;
+		position: absolute;
+		overflow: visible;
+		width: 460px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Rockwell;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		color: rgba(41,42,80,1);
+	}
+	#AMD {
+		left: 485px;
+		top: 106px;
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Rockwell;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+	#Tutvustame_AMD_RyzenTM_5000_se {
+		left: 485px;
+		top: 176px;
+		position: absolute;
+		overflow: hidden;
+		width: 922px;
+		height: 273px;
+		text-align: left;
+		font-family: Rockwell;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(41,42,80,1);
+	}
+	#Pilt {
+		position: absolute;
+		width: 430px;
+		height: 430px;
+		left: 15px;
+		top: 19px;
+		overflow: visible;
+	}
+	#Pilt_ {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Pilt_ {
+		position: absolute;
+		overflow: visible;
+		width: 430px;
+		height: 430px;
+		left: 0px;
+		top: 0px;
+	}
+	#Image_1 {
+		position: absolute;
+		width: 425px;
+		height: 425px;
+		left: 3px;
+		top: 3px;
+		overflow: visible;
+	}
+	#Lisa_ostukorvi {
+		position: absolute;
+		width: 396px;
+		height: 85px;
+		left: 1050px;
+		top: 611px;
+		overflow: visible;
+	}
+	#Rectangle_8 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_8 {
+		position: absolute;
+		overflow: visible;
+		width: 396px;
+		height: 85px;
+		left: 0px;
+		top: 0px;
+	}
+	#Component_7__1 {
+		position: absolute;
+		width: 323px;
+		height: 47px;
+		left: 37px;
+		top: 16px;
+		overflow: visible;
+	}
+	#LISA_OSTUKORVI {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(41,42,80,1);
+	}
+	#Spetsifikatsioonid {
+		position: absolute;
+		width: 460px;
+		height: 85px;
+		left: 538px;
+		top: 611px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Spetsifikatsioonid.html;
+		cursor: pointer;
+	}
+	#Rectangle_8_bb {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_8_bb {
+		position: absolute;
+		overflow: visible;
+		width: 460px;
+		height: 85px;
+		left: 0px;
+		top: 0px;
+	}
+	#SPETSIFIKATSIOONID {
+		left: 25px;
+		top: 19px;
+		position: absolute;
+		overflow: visible;
+		width: 412px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(41,42,80,1);
+	}
+	#Footer {
+		position: absolute;
+		width: 1542px;
+		height: 215px;
+		left: 378px;
+		top: 865px;
+		overflow: visible;
+	}
+	#Footer_bg {
+		fill: rgba(178,192,203,1);
+	}
+	.Footer_bg {
+		position: absolute;
+		overflow: visible;
+		width: 1542px;
+		height: 215px;
+		left: 0px;
+		top: 0px;
+	}
+	#Kontaktikoonid {
+		position: absolute;
+		width: 56.3px;
+		height: 136.3px;
+		left: 1459px;
+		top: 35px;
+		overflow: visible;
+	}
+	#Icon_awesome-facebook {
+		fill: rgba(0,0,0,1);
+	}
+	.Icon_awesome-facebook {
+		overflow: visible;
+		position: absolute;
+		width: 56.3px;
+		height: 56.295px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_awesome-instagram {
+		fill: rgba(0,0,0,1);
+	}
+	.Icon_awesome-instagram {
+		overflow: visible;
+		position: absolute;
+		width: 56.3px;
+		height: 56.3px;
+		left: 0px;
+		top: 80px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Left_side_text {
+		position: absolute;
+		width: 569px;
+		height: 159px;
+		left: 51px;
+		top: 35px;
+		overflow: visible;
+	}
+	#Kontakt {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Kontakt___LOCK.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+		text-transform: capitalize;
+	}
+	#FAQ {
+		left: 0px;
+		top: 59px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: FAQ___LOCK.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+		text-transform: capitalize;
+	}
+	#Meist {
+		left: 0px;
+		top: 118px;
+		position: absolute;
+		overflow: visible;
+		width: 92px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+		text-transform: capitalize;
+	}
+	#Privaatsustingimused {
+		left: 206px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 364px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+		text-transform: capitalize;
+	}
+	#Tarneinfo {
+		left: 206px;
+		top: 59px;
+		position: absolute;
+		overflow: visible;
+		width: 158px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+		text-transform: capitalize;
+	}
+	#Ajalugu {
+		left: 206px;
+		top: 118px;
+		position: absolute;
+		overflow: visible;
+		width: 130px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+		text-transform: capitalize;
+	}
+	#Top_bar {
+		position: absolute;
+		width: 1542px;
+		height: 83px;
+		left: 378px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_3 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 1542px;
+		height: 83px;
+		left: 0px;
+		top: 0px;
+	}
+	#TOODE {
+		left: 25px;
+		top: 18px;
+		position: absolute;
+		overflow: visible;
+		width: 138px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(112,112,112,1);
+		text-transform: uppercase;
+	}
+	#Icon_awesome-shopping-cart {
+		position: absolute;
+		width: 63.337px;
+		height: 56.3px;
+		left: 1297.264px;
+		top: 13.35px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Ostukorv.html;
+		cursor: pointer;
+	}
+	#Icon_awesome-shopping-cart_bt {
+		fill: rgba(0,0,0,1);
+	}
+	.Icon_awesome-shopping-cart_bt {
+		overflow: visible;
+		position: absolute;
+		width: 63.337px;
+		height: 56.3px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Home {
+		position: absolute;
+		width: 155px;
+		height: 57px;
+		left: 1374px;
+		top: 13px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Avaleht___LOCK.html;
+		cursor: pointer;
+	}
+	#Rectangle_4 {
+		fill: rgba(118,194,177,1);
+		stroke: rgba(152,220,205,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_4 {
+		position: absolute;
+		overflow: visible;
+		width: 155px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+	}
+	#HOME {
+		left: 18px;
+		top: 5px;
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,1);
+	}
+	#Side_bar {
+		position: absolute;
+		width: 378px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_1 {
+		fill: rgba(233,233,233,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 378px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+	}
+	#Side_bar_filter {
+		position: absolute;
+		width: 324px;
+		height: 682px;
+		left: 27px;
+		top: 207px;
+		overflow: visible;
+		padding: 0px;
+	}
+	#Filter {
+		position: absolute;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 623px;
+		overflow: visible;
+	}
+	#Rectangle_6 {
+		fill: rgba(54,158,184,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_6 {
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 0px;
+	}
+	#Korpused {
+		left: 81px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 163px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+	#Filter_b {
+		position: absolute;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 534px;
+		overflow: visible;
+	}
+	#Rectangle_6_b {
+		fill: rgba(54,158,184,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_6_b {
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 0px;
+	}
+	#Telefonid {
+		left: 84px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 157px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+	#Filter_ca {
+		position: absolute;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 445px;
+		overflow: visible;
+	}
+	#Rectangle_6_ca {
+		fill: rgba(54,158,184,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_6_ca {
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 0px;
+	}
+	#SSD_HDD {
+		left: 82px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+	#Filter_cb {
+		position: absolute;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 356px;
+		overflow: visible;
+	}
+	#Rectangle_6_cb {
+		fill: rgba(54,158,184,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_6_cb {
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 0px;
+	}
+	#RAM {
+		left: 124px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+	#Filter_cc {
+		position: absolute;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 267px;
+		overflow: visible;
+	}
+	#Rectangle_6_cd {
+		fill: rgba(54,158,184,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_6_cd {
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 0px;
+	}
+	#Kaablid {
+		left: 98px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+	#Filter_cf {
+		position: absolute;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_6_cg {
+		fill: rgba(54,158,184,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_6_cg {
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 0px;
+	}
+	#Graafikakaardid {
+		left: 30px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 265px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+	#Filter_ci {
+		position: absolute;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 89px;
+		overflow: visible;
+	}
+	#Rectangle_6_cj {
+		fill: rgba(54,158,184,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_6_cj {
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 0px;
+	}
+	#Emaplaadid {
+		left: 61px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 203px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+	#Filter_cl {
+		position: absolute;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_6_cm {
+		fill: rgba(54,158,184,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_6_cm {
+		position: absolute;
+		overflow: visible;
+		width: 324px;
+		height: 59px;
+		left: 0px;
+		top: 0px;
+	}
+	#Protsessorid {
+		left: 58px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 209px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+	#FILTER {
+		left: 27px;
+		top: 126px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Raleway;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(41,42,80,1);
+	}
+</style>
+</head>
+<body>
+<div id="Toode">
+	<div id="Main">
+		<svg class="Main_bg">
+			<rect id="Main_bg" rx="0" ry="0" x="0" y="0" width="1542" height="2017">
+			</rect>
+		</svg>
+		<div id="Toode1">
+			<svg class="Toote_bg">
+				<rect id="Toote_bg" rx="24" ry="24" x="0" y="0" width="1455" height="706">
+				</rect>
+			</svg>
+			<div id="Hind">
+				<svg class="Hind_bg">
+					<rect id="Hind_bg" rx="19" ry="19" x="0" y="0" width="243" height="71">
+					</rect>
+				</svg>
+				<div id="xx">
+					<span>300€</span>
+				</div>
+			</div>
+			<div id="Stars">
+				<svg class="Stars_bg">
+					<rect id="Stars_bg" rx="19" ry="19" x="0" y="0" width="430" height="86">
+					</rect>
+				</svg>
+				<svg class="Icon_awesome-star" viewBox="2.254 -0.001 69.332 63.997">
+					<path id="Icon_awesome-star" d="M 33.20106887817383 2.224822759628296 L 24.73863220214844 18.77208518981934 L 5.805063247680664 21.43414688110352 C 2.409720897674561 21.9090690612793 1.048991918563843 25.94589996337891 3.511263132095337 28.25801849365234 L 17.20926475524902 41.13089370727539 L 13.96943473815918 59.31538391113281 C 13.38626480102539 62.60234069824219 16.97599983215332 65.06443786621094 19.98256301879883 63.52719116210938 L 36.92039489746094 54.94110870361328 L 53.85823440551758 63.52719116210938 C 56.86479568481445 65.05193328857422 60.45452117919922 62.60234451293945 59.87135696411133 59.31538391113281 L 56.63152313232422 41.13089370727539 L 70.32952117919922 28.25801849365234 C 72.79179382324219 25.94589996337891 71.43106079101562 21.90906524658203 68.03572845458984 21.43414306640625 L 49.1021614074707 18.77208518981934 L 40.63971710205078 2.224822759628296 C 39.12348175048828 -0.724689781665802 34.73027038574219 -0.7621833086013794 33.20106887817383 2.224822759628296 Z">
+					</path>
+				</svg>
+				<svg class="Icon_awesome-star_w" viewBox="2.254 -0.001 69.332 63.997">
+					<path id="Icon_awesome-star_w" d="M 33.20106887817383 2.224822759628296 L 24.73863220214844 18.77208518981934 L 5.805063247680664 21.43414688110352 C 2.409720897674561 21.9090690612793 1.048991918563843 25.94589996337891 3.511263132095337 28.25801849365234 L 17.20926475524902 41.13089370727539 L 13.96943473815918 59.31538391113281 C 13.38626480102539 62.60234069824219 16.97599983215332 65.06443786621094 19.98256301879883 63.52719116210938 L 36.92039489746094 54.94110870361328 L 53.85823440551758 63.52719116210938 C 56.86479568481445 65.05193328857422 60.45452117919922 62.60234451293945 59.87135696411133 59.31538391113281 L 56.63152313232422 41.13089370727539 L 70.32952117919922 28.25801849365234 C 72.79179382324219 25.94589996337891 71.43106079101562 21.90906524658203 68.03572845458984 21.43414306640625 L 49.1021614074707 18.77208518981934 L 40.63971710205078 2.224822759628296 C 39.12348175048828 -0.724689781665802 34.73027038574219 -0.7621833086013794 33.20106887817383 2.224822759628296 Z">
+					</path>
+				</svg>
+				<svg class="Icon_awesome-star_x" viewBox="2.254 -0.001 69.332 63.997">
+					<path id="Icon_awesome-star_x" d="M 33.20106887817383 2.224822759628296 L 24.73863220214844 18.77208518981934 L 5.805063247680664 21.43414688110352 C 2.409720897674561 21.9090690612793 1.048991918563843 25.94589996337891 3.511263132095337 28.25801849365234 L 17.20926475524902 41.13089370727539 L 13.96943473815918 59.31538391113281 C 13.38626480102539 62.60234069824219 16.97599983215332 65.06443786621094 19.98256301879883 63.52719116210938 L 36.92039489746094 54.94110870361328 L 53.85823440551758 63.52719116210938 C 56.86479568481445 65.05193328857422 60.45452117919922 62.60234451293945 59.87135696411133 59.31538391113281 L 56.63152313232422 41.13089370727539 L 70.32952117919922 28.25801849365234 C 72.79179382324219 25.94589996337891 71.43106079101562 21.90906524658203 68.03572845458984 21.43414306640625 L 49.1021614074707 18.77208518981934 L 40.63971710205078 2.224822759628296 C 39.12348175048828 -0.724689781665802 34.73027038574219 -0.7621833086013794 33.20106887817383 2.224822759628296 Z">
+					</path>
+				</svg>
+				<svg class="Icon_awesome-star_y" viewBox="2.254 -0.001 69.332 63.997">
+					<path id="Icon_awesome-star_y" d="M 33.20106887817383 2.224822759628296 L 24.73863220214844 18.77208518981934 L 5.805063247680664 21.43414688110352 C 2.409720897674561 21.9090690612793 1.048991918563843 25.94589996337891 3.511263132095337 28.25801849365234 L 17.20926475524902 41.13089370727539 L 13.96943473815918 59.31538391113281 C 13.38626480102539 62.60234069824219 16.97599983215332 65.06443786621094 19.98256301879883 63.52719116210938 L 36.92039489746094 54.94110870361328 L 53.85823440551758 63.52719116210938 C 56.86479568481445 65.05193328857422 60.45452117919922 62.60234451293945 59.87135696411133 59.31538391113281 L 56.63152313232422 41.13089370727539 L 70.32952117919922 28.25801849365234 C 72.79179382324219 25.94589996337891 71.43106079101562 21.90906524658203 68.03572845458984 21.43414306640625 L 49.1021614074707 18.77208518981934 L 40.63971710205078 2.224822759628296 C 39.12348175048828 -0.724689781665802 34.73027038574219 -0.7621833086013794 33.20106887817383 2.224822759628296 Z">
+					</path>
+				</svg>
+				<svg class="Icon_awesome-star_z" viewBox="2.254 -0.001 69.332 63.997">
+					<path id="Icon_awesome-star_z" d="M 33.20106887817383 2.224822759628296 L 24.73863220214844 18.77208518981934 L 5.805063247680664 21.43414688110352 C 2.409720897674561 21.9090690612793 1.048991918563843 25.94589996337891 3.511263132095337 28.25801849365234 L 17.20926475524902 41.13089370727539 L 13.96943473815918 59.31538391113281 C 13.38626480102539 62.60234069824219 16.97599983215332 65.06443786621094 19.98256301879883 63.52719116210938 L 36.92039489746094 54.94110870361328 L 53.85823440551758 63.52719116210938 C 56.86479568481445 65.05193328857422 60.45452117919922 62.60234451293945 59.87135696411133 59.31538391113281 L 56.63152313232422 41.13089370727539 L 70.32952117919922 28.25801849365234 C 72.79179382324219 25.94589996337891 71.43106079101562 21.90906524658203 68.03572845458984 21.43414306640625 L 49.1021614074707 18.77208518981934 L 40.63971710205078 2.224822759628296 C 39.12348175048828 -0.724689781665802 34.73027038574219 -0.7621833086013794 33.20106887817383 2.224822759628296 Z">
+					</path>
+				</svg>
+			</div>
+			<div id="AMD_Ryzen_5_5600X">
+				<span>AMD Ryzen 5 5600X</span>
+			</div>
+			<div id="AMD">
+				<span>AMD</span>
+			</div>
+			<div id="Tutvustame_AMD_RyzenTM_5000_se">
+				<span>Tutvustame AMD Ryzen</span><span style="vertical-align:super;">TM </span><span style="text-transform:capitalize;">5000 </span><span style="text-transform:lowercase;">s</span><span style="text-transform:capitalize;">eeria</span><span style="text-transform:lowercase;"> lauaarvutiprotsessoreid! </span><span>Kui teil on mängijatele ja sisuloojatele maailma kõige arenenum protsessori arhitektuur, on võimalused lõputud. Ükskõik, kas mängite uusimaid mänge, kavandate järgmist pilvelõhkujat või krigistate andmeid, vajate võimsat protsessorit, mis saab selle kõigega hakkama - ja palju muud Käed alla, AMD Ryzen</span><span style="vertical-align:super;">TM</span><span> 5000 seeria töölauaprotsessorid seavad lati nii mängijatele kui ka kunstnikele</span>
+			</div>
+			<div id="Pilt">
+				<svg class="Pilt_">
+					<rect id="Pilt_" rx="10" ry="10" x="0" y="0" width="430" height="430">
+					</rect>
+				</svg>
+				<img id="Image_1" src="Image_1.png" srcset="Image_1.png 1x, Image_1@2x.png 2x">
+					
+			</div>
+		</div>
+		<div id="Lisa_ostukorvi">
+			<svg class="Rectangle_8">
+				<rect id="Rectangle_8" rx="15" ry="15" x="0" y="0" width="396" height="85">
+				</rect>
+			</svg>
+			<div id="Component_7__1" class="Component_7___1">
+				<div id="LISA_OSTUKORVI">
+					<span>LISA OSTUKORVI</span>
+				</div>
+			</div>
+		</div>
+		<a href="Spetsifikatsioonid.html" id="Spetsifikatsioonid">
+			<svg class="Rectangle_8_bb">
+				<rect id="Rectangle_8_bb" rx="15" ry="15" x="0" y="0" width="460" height="85">
+				</rect>
+			</svg>
+			<div id="SPETSIFIKATSIOONID">
+				<span>SPETSIFIKATSIOONID</span>
+			</div>
+		</a>
+	</div>
+	<div id="Footer">
+		<svg class="Footer_bg">
+			<rect id="Footer_bg" rx="0" ry="0" x="0" y="0" width="1542" height="215">
+			</rect>
+		</svg>
+		<div id="Kontaktikoonid">
+			<svg class="Icon_awesome-facebook" viewBox="1.094 1.094 56.3 56.295">
+				<path id="Icon_awesome-facebook" d="M 57.39374923706055 29.41267967224121 C 57.39374923706055 13.76875400543213 44.79435348510742 1.09375 29.24375152587891 1.09375 C 13.69314479827881 1.09375 1.09375 13.76875400543213 1.09375 29.41267967224121 C 1.09375 43.54701995849609 11.38779544830322 55.26284027099609 24.84531402587891 57.38904190063477 L 24.84531402587891 37.59890747070312 L 17.69430732727051 37.59890747070312 L 17.69430732727051 29.41267967224121 L 24.84531402587891 29.41267967224121 L 24.84531402587891 23.17337989807129 C 24.84531402587891 16.07651901245117 29.04511260986328 12.15640258789062 35.47761535644531 12.15640258789062 C 38.55822372436523 12.15640258789062 41.77957916259766 12.70907783508301 41.77957916259766 12.70907783508301 L 41.77957916259766 19.67462348937988 L 38.22904968261719 19.67462348937988 C 34.73300170898438 19.67462348937988 33.64219284057617 21.8579216003418 33.64219284057617 24.09717178344727 L 33.64219284057617 29.41267967224121 L 41.44927215576172 29.41267967224121 L 40.20068740844727 37.59890747070312 L 33.64219284057617 37.59890747070312 L 33.64219284057617 57.38904190063477 C 47.09970092773438 55.26284027099609 57.39374923706055 43.54701995849609 57.39374923706055 29.41267967224121 Z">
+				</path>
+			</svg>
+			<svg class="Icon_awesome-instagram" viewBox="-0.008 3.5 56.3 56.3">
+				<path id="Icon_awesome-instagram" d="M 28.14808082580566 17.21492004394531 C 20.15993690490723 17.21492004394531 13.71666622161865 23.65962409973145 13.71666622161865 31.6495532989502 C 13.71666622161865 39.63948059082031 20.15993690490723 46.08418655395508 28.14808082580566 46.08418655395508 C 36.13622665405273 46.08418655395508 42.57949066162109 39.63948059082031 42.57949066162109 31.6495532989502 C 42.57949066162109 23.65962409973145 36.13622665405273 17.21492004394531 28.14808082580566 17.21492004394531 Z M 28.14808082580566 41.03395462036133 C 22.98592948913574 41.03395462036133 18.76577949523926 36.82542037963867 18.76577949523926 31.64955711364746 C 18.76577949523926 26.47369384765625 22.9733715057373 22.26515960693359 28.14808082580566 22.26515960693359 C 33.32279205322266 22.26515960693359 37.53038024902344 26.47369194030762 37.53038024902344 31.64955711364746 C 37.53038024902344 36.82542037963867 33.31023025512695 41.03395462036133 28.14808082580566 41.03395462036133 Z M 46.535888671875 16.62447357177734 C 46.535888671875 18.4963264465332 45.02869033813477 19.99129486083984 43.1698112487793 19.99129486083984 C 41.29837799072266 19.99129486083984 39.80374145507812 18.4837646484375 39.80374145507812 16.62447357177734 C 39.80374145507812 14.76518154144287 41.31093597412109 13.25764942169189 43.1698112487793 13.25764942169189 C 45.02869033813477 13.25764942169189 46.535888671875 14.7651834487915 46.535888671875 16.62447357177734 Z M 56.09402465820312 20.04154968261719 C 55.8805046081543 15.53151321411133 54.85059356689453 11.53654956817627 51.54731369018555 8.245100975036621 C 48.25659942626953 4.953652381896973 44.26252746582031 3.92350435256958 39.75349426269531 3.697373867034912 C 35.10630798339844 3.433555841445923 21.17729377746582 3.433555841445923 16.53010177612305 3.697373867034912 C 12.0336275100708 3.910941362380981 8.039556503295898 4.941089630126953 4.736282348632812 8.232539176940918 C 1.433009028434753 11.52398681640625 0.4156508147716522 15.51895046234131 0.1895710378885269 20.02898406982422 C -0.0741884782910347 24.67721366882324 -0.0741884782910347 38.60934066772461 0.1895710378885269 43.25757217407227 C 0.403090626001358 47.76760864257812 1.433008790016174 51.76256942749023 4.736282348632812 55.05401992797852 C 8.039556503295898 58.3454704284668 12.02106761932373 59.37561416625977 16.53010177612305 59.60174560546875 C 21.17729377746582 59.86557006835938 35.10630416870117 59.86557006835938 39.75349426269531 59.60174560546875 C 44.26252746582031 59.38817596435547 48.25659942626953 58.35803604125977 51.54731369018555 55.05401992797852 C 54.83802795410156 51.76256942749023 55.86795043945312 47.76760864257812 56.09402465820312 43.25757217407227 C 56.3577880859375 38.60934448242188 56.3577880859375 24.68978118896484 56.09402465820312 20.04155158996582 Z M 50.09035491943359 48.24498748779297 C 49.11067581176758 50.70729064941406 47.2141227722168 52.60427093505859 44.73980712890625 53.59673309326172 C 41.03461456298828 55.06658172607422 32.24263000488281 54.72737884521484 28.1480770111084 54.72737884521484 C 24.05352210998535 54.72737884521484 15.24898052215576 55.05401611328125 11.55634689331055 53.59673309326172 C 9.09459114074707 52.6168327331543 7.198035717010498 50.7198600769043 6.205798149108887 48.24499130249023 C 4.73628044128418 44.53897094726562 5.075399875640869 35.74502563476562 5.075399875640869 31.64955711364746 C 5.075399875640869 27.5540885925293 4.74884033203125 18.74758338928223 6.205798149108887 15.05412769317627 C 7.185476303100586 12.59182357788086 9.08203125 10.69484329223633 11.55634689331055 9.702383041381836 C 15.26153945922852 8.232539176940918 24.05352401733398 8.571734428405762 28.1480770111084 8.571734428405762 C 32.24262619018555 8.571734428405762 41.04717254638672 8.245100975036621 44.73980712890625 9.702383041381836 C 47.20156478881836 10.68228054046631 49.09811782836914 12.57925987243652 50.09035110473633 15.05412769317627 C 51.55987548828125 18.76014518737793 51.22074890136719 27.55409049987793 51.22074890136719 31.64955711364746 C 51.22074890136719 35.74502182006836 51.55986785888672 44.55153274536133 50.09035110473633 48.24499130249023 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="Left_side_text">
+			<a href="Kontakt___LOCK.html" id="Kontakt">
+				<span>Kontakt</span>
+			</a>
+			<a href="FAQ___LOCK.html" id="FAQ">
+				<span>FAQ</span>
+			</a>
+			<div id="Meist">
+				<span>Meist</span>
+			</div>
+			<div id="Privaatsustingimused">
+				<span>Privaatsustingimused</span>
+			</div>
+			<div id="Tarneinfo">
+				<span>Tarneinfo</span>
+			</div>
+			<div id="Ajalugu">
+				<span>Ajalugu</span>
+			</div>
+		</div>
+	</div>
+	<div id="Top_bar">
+		<svg class="Rectangle_3">
+			<rect id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="1542" height="83">
+			</rect>
+		</svg>
+		<div id="TOODE">
+			<span>TOODE</span>
+		</div>
+		<a href="Ostukorv.html" id="Icon_awesome-shopping-cart" class="Icon_awesome_shopping_cart">
+			<svg class="Icon_awesome-shopping-cart_bt" viewBox="0 0 63.337 56.3">
+				<path id="Icon_awesome-shopping-cart_bt" d="M 58.07257080078125 33.13331985473633 L 63.27075576782227 10.26144409179688 C 63.64604949951172 8.610051155090332 62.39084625244141 7.037499904632568 60.69733810424805 7.037499904632568 L 17.50666046142578 7.037499904632568 L 16.49875831604004 2.110150337219238 C 16.24760818481445 0.8819966912269592 15.16691207885742 0 13.91324710845947 0 L 2.639062404632568 0 C 1.181530237197876 0 0 1.181530237197876 0 2.639062404632568 L 0 4.3984375 C 0 5.855969429016113 1.181530237197876 7.037499904632568 2.639062404632568 7.037499904632568 L 10.32346248626709 7.037499904632568 L 18.04799842834473 44.80193328857422 C 16.19999504089355 45.86470794677734 14.95468711853027 47.85741806030273 14.95468711853027 50.14218902587891 C 14.95468711853027 53.54306030273438 17.71162796020508 56.30000305175781 21.11249923706055 56.30000305175781 C 24.51337051391602 56.30000305175781 27.27031135559082 53.54306411743164 27.27031135559082 50.14218902587891 C 27.27031135559082 48.41866302490234 26.56139373779297 46.86150360107422 25.42032814025879 45.74375152587891 L 48.47330856323242 45.74375152587891 C 47.33235549926758 46.86150360107422 46.62343597412109 48.41865921020508 46.62343597412109 50.14218902587891 C 46.62343597412109 53.54306030273438 49.38037490844727 56.30000305175781 52.78125 56.30000305175781 C 56.18212509155273 56.30000305175781 58.93906402587891 53.54306411743164 58.93906402587891 50.14218902587891 C 58.93906402587891 47.70413589477539 57.52188873291016 45.59728240966797 55.46660614013672 44.599609375 L 56.07326126098633 41.93019866943359 C 56.44855880737305 40.27880477905273 55.19335556030273 38.70625305175781 53.49984741210938 38.70625305175781 L 23.98435020446777 38.70625305175781 L 23.26465606689453 35.18750381469727 L 55.4991569519043 35.18750381469727 C 56.73138046264648 35.18750381469727 57.79954147338867 34.33486557006836 58.07257080078125 33.13332366943359 Z">
+				</path>
+			</svg>
+		</a>
+		<a href="Avaleht___LOCK.html" id="Home" class="Home">
+			<svg class="Rectangle_4">
+				<rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="155" height="57">
+				</rect>
+			</svg>
+			<div id="HOME">
+				<span>HOME</span>
+			</div>
+		</a>
+	</div>
+	<div id="Side_bar" class="Side_bar">
+		<svg class="Rectangle_1">
+			<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="378" height="1080">
+			</rect>
+		</svg>
+		<div id="Side_bar_filter">
+			<div id="Filter">
+				<svg class="Rectangle_6">
+					<rect id="Rectangle_6" rx="20" ry="20" x="0" y="0" width="324" height="59">
+					</rect>
+				</svg>
+				<div id="Korpused">
+					<span>Korpused</span>
+				</div>
+			</div>
+			<div id="Filter_b">
+				<svg class="Rectangle_6_b">
+					<rect id="Rectangle_6_b" rx="20" ry="20" x="0" y="0" width="324" height="59">
+					</rect>
+				</svg>
+				<div id="Telefonid">
+					<span>Telefonid</span>
+				</div>
+			</div>
+			<div id="Filter_ca">
+				<svg class="Rectangle_6_ca">
+					<rect id="Rectangle_6_ca" rx="20" ry="20" x="0" y="0" width="324" height="59">
+					</rect>
+				</svg>
+				<div id="SSD_HDD">
+					<span>SSD, HDD</span>
+				</div>
+			</div>
+			<div id="Filter_cb">
+				<svg class="Rectangle_6_cb">
+					<rect id="Rectangle_6_cb" rx="20" ry="20" x="0" y="0" width="324" height="59">
+					</rect>
+				</svg>
+				<div id="RAM">
+					<span>RAM</span>
+				</div>
+			</div>
+			<div id="Filter_cc">
+				<svg class="Rectangle_6_cd">
+					<rect id="Rectangle_6_cd" rx="20" ry="20" x="0" y="0" width="324" height="59">
+					</rect>
+				</svg>
+				<div id="Kaablid">
+					<span>Kaablid</span>
+				</div>
+			</div>
+			<div id="Filter_cf">
+				<svg class="Rectangle_6_cg">
+					<rect id="Rectangle_6_cg" rx="20" ry="20" x="0" y="0" width="324" height="59">
+					</rect>
+				</svg>
+				<div id="Graafikakaardid">
+					<span>Graafikakaardid</span>
+				</div>
+			</div>
+			<div id="Filter_ci">
+				<svg class="Rectangle_6_cj">
+					<rect id="Rectangle_6_cj" rx="20" ry="20" x="0" y="0" width="324" height="59">
+					</rect>
+				</svg>
+				<div id="Emaplaadid">
+					<span>Emaplaadid</span>
+				</div>
+			</div>
+			<div id="Filter_cl">
+				<svg class="Rectangle_6_cm">
+					<rect id="Rectangle_6_cm" rx="20" ry="20" x="0" y="0" width="324" height="59">
+					</rect>
+				</svg>
+				<a href="Avaleht___LOCK.html" id="Protsessorid">
+					<span>Protsessorid</span>
+				</a>
+			</div>
+		</div>
+		<div id="FILTER">
+			<span>FILTER</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
